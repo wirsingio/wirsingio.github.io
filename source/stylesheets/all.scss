@@ -7,6 +7,10 @@
     gutter-width : 3rem,
 ) );
 
+@include gridle_register_state ( mobile , (
+  max-width : 915px
+) );
+
 @include gridle_generate_classes();
 
 body {
@@ -47,6 +51,8 @@ body {
 
 .about-cell {
   @include gridle(4);
+  @include gridle(12, "mobile");
+  margin-bottom: 1.5rem;
 }
 
 .about-avatar {
