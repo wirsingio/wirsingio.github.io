@@ -16,7 +16,7 @@
   
   <body class="<%= page_classes %>">
     <%= yield %>
-    <%= javascript_include_tag  "all", async: true %>
+    <%= javascript_include_tag  "all" %>
     <script type="text/javascript">
       var images = new RandomImage(".avatar-image")
       images.inject()
