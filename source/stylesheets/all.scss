@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "gridle/gridle";
+@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
+
+@include gridle_setup( (
+    context : 12,
+    gutter-width : 3rem,
+) );
+
+@include gridle_generate_classes();
+
+body {
+  font-family: Signika, Georgia, serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #666;
+}
+
+.jumbotron {
+  background-color: #A7DF71;
+  padding: 2rem 1.5rem 2.5rem;
+  line-height: 35px;
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron-logo {
+  display: block;
+  width: 213px;
+  margin: 0px auto 2.5rem;
+  text-align: center;
+}
+
+.jumbotron-headline {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+}
+
+.about {
+  @include gridle_container();
+  max-width:1080px;
+  margin:0 auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.about-cell {
+  @include gridle(4);
+}
+
+.about-avatar {
+  border: 1px solid #DDD;
+  width: 180px;
+  height: 180px;
+  margin: 0px auto 1rem;
+  -webkit-border-radius: 50%; /* Can also be 55px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.about-avatar .round-image {
+  width: 170px;
+  height: 170px;
+  margin: 5px;
+  -webkit-border-radius: 50%; /* Can also be 50px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.about-name {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.about-teaser {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.about-description {
+  margin: 0;
+  font-size: 14px;
+}
