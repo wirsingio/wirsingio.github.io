@@ -104,9 +104,6 @@ header {
   font-size: 13px;
 }
 
-.contact {
-}
-
 .imprint {
   color: #BBB;
   @include gridle_container();
@@ -120,5 +117,6 @@ header {
 
   .imprint-responsible {
     @include gridle(4);
+    @include gridle(12, "mobile");
   }
 }
