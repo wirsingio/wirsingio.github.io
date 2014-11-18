@@ -1,0 +1,14 @@
+
+@import url(http://fonts.googleapis.com/css?family=Signika:300,400);
+
+@mixin font-signika ($weight) {
+
+  font-family: Signika, Georgia, serif;
+
+  @if $weight == 'light' {
+    font-weight: 300;
+  }
+  @else if $weight == 'bold' {
+    font-weight: 400;
+  }
+}

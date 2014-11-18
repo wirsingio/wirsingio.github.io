@@ -1,23 +1,20 @@
 @charset "utf-8";
 @import "gridle/gridle";
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
+@import "mixins/fonts";
 
-@include gridle_setup( (
-    context : 12,
-    gutter-width : 3rem,
-) );
-
-@include gridle_register_state ( mobile , (
-  max-width : 915px
-) );
-
+@include gridle_setup((context: 12, gutter-width: 3rem));
+@include gridle_register_state ( mobile, (max-width: 915px));
 @include gridle_generate_classes();
 
 body {
-  font-family: Signika, Georgia, serif;
+  @include font-signika(light);
   font-size: 16px;
   line-height: 21px;
   color: #666;
+}
+
+h1, h2, h3, h4, h5 {
+  @include font-signika(light);
 }
 
 .wirsing {
@@ -82,6 +79,7 @@ body {
 .about-teaser {
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 14px;
 }
 
 .about-description {
