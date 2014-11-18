@@ -107,10 +107,11 @@ header {
   color: #BBB;
   @include gridle_container();
   @include center_box();
+  font-size: 14px;
 
   .imprint-title {
-    font-size: 14px;
     @include gridle(12);
+    font-size: inherit;
   }
 
   .imprint-responsible {
