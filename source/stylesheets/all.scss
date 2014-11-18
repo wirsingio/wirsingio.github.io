@@ -17,25 +17,36 @@ h1, h2, h3, h4, h5 {
   @include font-signika(light);
 }
 
-.wirsing {
-  background-color: #A7DF71;
+header {
+
+  // tinted background image with pure css
+  background:
+    /* top, transparent color, faked with gradient */
+    linear-gradient(
+      rgba(141, 204, 78, 0.7),
+      rgba(141, 204, 78, 0.7)
+    ),
+    /* bottom, image */
+    url(/images/soft_wallpaper.png);
+
   padding: 2rem 1.5rem 2.5rem;
   line-height: 35px;
   margin-bottom: 1.5rem;
-}
 
-.wirsing-logo {
-  display: block;
-  width: 213px;
-  margin: 0px auto 2.5rem;
-  text-align: center;
-}
+  .logo {
+    display: block;
+    width: 213px;
+    margin: 0px auto 2.5rem;
+    text-align: center;
+  }
 
-.wirsing-headline {
-  color: #fff;
-  font-weight: 400;
-  text-align: center;
-  margin: 0px;
+  .headline {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+  }
+
 }
 
 .about {
