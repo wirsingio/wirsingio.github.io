@@ -6,6 +6,11 @@
 @include gridle_register_state ( mobile, (max-width: 915px));
 @include gridle_generate_classes();
 
+@mixin center_box() {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 body {
   @include font-opensans;
   font-size: 16px;
@@ -52,8 +57,7 @@ header {
 
 .about {
   @include gridle_container();
-  max-width: 1080px;
-  margin: 0 auto;
+  @include center_box();
   text-align: center;
   padding: 4rem 0;
 }
@@ -97,4 +101,19 @@ header {
 .about-description {
   margin: 0;
   font-size: 13px;
+}
+
+.imprint {
+  color: #BBB;
+  @include gridle_container();
+  @include center_box();
+
+  .imprint-title {
+    font-size: 14px;
+    @include gridle(12);
+  }
+
+  .imprint-responsible {
+    @include gridle(4);
+  }
 }
