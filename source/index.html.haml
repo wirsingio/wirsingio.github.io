@@ -15,7 +15,7 @@ title: Wirsing – Software für eine bessere Zukunft
   = partial :team_member, locals: { id: 'clemens', 
     name: 'Clemens Helm',
     job: 'Backend Developer',
-    description: 'Clemens entwickelt hoch qualtitätive Software und viele seiner Apps sind bereits jahrelang erfolgreich im Einsatz. Hier bei Wirsing entdeckt er gerade seine Leidenschaft für Marketing, Planung und Unternehmertum.' }
+    description: 'Clemens entwickelt Software erster Klasse. Viele seiner Apps sind bereits jahrelang erfolgreich im Einsatz. Hier bei Wirsing lebt er auch seine anderen Leidenschaften: Marketing, Planung und Unternehmertum.' }
   = partial :team_member, locals: { id: 'aaron', 
     name: 'Aaron Cruz',
     job: 'Mobile &amp; Web Development',
@@ -26,9 +26,7 @@ title: Wirsing – Software für eine bessere Zukunft
     description: 'Für Dominik sind Design und Programmierung keine getrennten Konzepte, sondern zwei spannende Möglichkeiten, die Welt kreativ zu gestalten. Seine Spezialität sind dabei moderne interaktive Applikationen für das Web.' }
 
 %section.contact
-  Kontaktieren Sie uns! Wir freuen uns über Post an
-  %a(href="mailto:hallo@wirsing.io")> hallo@wirsing.io
-  \.
+  Schreiben Sie uns! Wir freuen uns über Post an #{mail_to 'hallo@wirsing.io'}.
 
 %section.imprint
   %h2.imprint-title Verantwortlich für den Inhalt:
