@@ -41,6 +41,15 @@ header {
 
 }
 
+.vision {
+  font-size: 25px;
+  padding: 3rem;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 0 auto;
+  @include font-signika;
+}
+
 .about {
   @include gridle_container();
   max-width: 1080px;
