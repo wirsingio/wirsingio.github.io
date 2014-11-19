@@ -34,6 +34,7 @@ header {
   background: url(/images/green-paper-background.jpg);
 
   padding: 3rem 1.5rem 3rem;
+  margin-bottom: 3rem;
   line-height: 35px;
 
   .logo {
@@ -55,10 +56,10 @@ header {
 .vision,
 .contact {
   font-size: 25px;
-  padding: 3rem;
+  padding: 0 3rem;
   line-height: 1.3em;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   @include font-signika;
 }
 
@@ -66,7 +67,8 @@ header {
   @include gridle_container();
   @include center_box();
   text-align: center;
-  padding: 4rem 0;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-cell {
@@ -117,9 +119,15 @@ header {
   font-size: 14px;
 
   .imprint-title {
+    margin: 0px;
     @include gridle(12);
     font-size: inherit;
     text-align: center;
+  }
+
+  .imprint-name {
+    font-weight: 600;
+    color: #999;
   }
 
   .imprint-responsible {
