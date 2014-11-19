@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: $text-color;
+  padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -118,10 +119,12 @@ header {
   .imprint-title {
     @include gridle(12);
     font-size: inherit;
+    text-align: center;
   }
 
   .imprint-responsible {
     @include gridle(4);
     @include gridle(12, "mobile");
+    text-align: center;
   }
 }
