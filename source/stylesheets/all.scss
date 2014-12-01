@@ -53,14 +53,19 @@ header {
 
 }
 
-.vision,
-.contact {
-  font-size: 25px;
-  padding: 0 3rem;
-  line-height: 1.3em;
+section {
+  margin: 0 auto 5rem;
+}
+
+.vision {
+
   text-align: center;
-  margin: 0 auto 3rem;
-  @include font-signika;
+
+  h2 {
+    font-size: 22px;
+    line-height: 1.5em;
+  }
+
 }
 
 .about {
@@ -78,7 +83,7 @@ header {
 }
 
 .about-avatar {
-  border: 1px solid #DDD;
+  border: 1px solid #BBB;
   width: 180px;
   height: 180px;
   margin: 0px auto 1rem;
@@ -110,6 +115,13 @@ header {
 .about-description {
   margin: 0;
   font-size: 13px;
+}
+
+.contact {
+  font-size: 22px;
+  line-height: 1.5em;
+  text-align: center;
+  @include font-signika;
 }
 
 .imprint {
