@@ -104,6 +104,46 @@ header {
   font-size: 13px;
 }
 
+.references {
+  @include gridle_container();
+  @include center_box();
+  padding: 4rem 0;
+
+  > h2, > p {
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  > p {
+    margin: 3rem 0;
+  }
+}
+
+.references-projects {
+  margin: 0;
+  padding: 0;
+}
+
+.references-project {
+  @include gridle(4);
+  @include gridle(12, "mobile");
+  margin-bottom: 1.5rem;
+
+  img {
+    border: 1px solid #DDD;
+    width: 310px;
+    height: 140px;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
 .imprint {
   color: #BBB;
   @include gridle_container();
