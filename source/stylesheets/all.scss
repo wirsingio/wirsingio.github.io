@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "gridle/gridle";
 @import "mixins/fonts";
+@import "settings/colors";
 
 @include gridle_setup((context: 12, gutter-width: 3rem));
 @include gridle_register_state ( mobile, (max-width: 915px));
@@ -15,11 +16,16 @@ body {
   @include font-opensans;
   font-size: 16px;
   line-height: 21px;
-  color: #666;
+  color: $text-color;
+  padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5 {
   @include font-signika;
+}
+
+a:link, a:visited {
+  color: $link-color;
 }
 
 header {
@@ -28,6 +34,7 @@ header {
   background: url(/images/green-paper-background.jpg);
 
   padding: 3rem 1.5rem 3rem;
+  margin-bottom: 3rem;
   line-height: 35px;
 
   .logo {
@@ -46,21 +53,27 @@ header {
 
 }
 
-.vision,
-.contact {
-  font-size: 25px;
-  padding: 3rem;
-  line-height: 1.3em;
+section {
+  margin: 0 auto 5rem;
+}
+
+.vision {
+
   text-align: center;
-  margin: 0 auto;
-  @include font-signika;
+
+  h2 {
+    font-size: 22px;
+    line-height: 1.5em;
+  }
+
 }
 
 .about {
   @include gridle_container();
   @include center_box();
   text-align: center;
-  padding: 4rem 0;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-cell {
@@ -70,7 +83,7 @@ header {
 }
 
 .about-avatar {
-  border: 1px solid #DDD;
+  border: 1px solid #BBB;
   width: 180px;
   height: 180px;
   margin: 0px auto 1rem;
@@ -144,6 +157,13 @@ header {
   }
 }
 
+.contact {
+  font-size: 22px;
+  line-height: 1.5em;
+  text-align: center;
+  @include font-signika;
+}
+
 .imprint {
   color: #BBB;
   @include gridle_container();
@@ -151,12 +171,20 @@ header {
   font-size: 14px;
 
   .imprint-title {
+    margin: 0px;
     @include gridle(12);
     font-size: inherit;
+    text-align: center;
+  }
+
+  .imprint-name {
+    font-weight: 600;
+    color: #999;
   }
 
   .imprint-responsible {
     @include gridle(4);
     @include gridle(12, "mobile");
+    text-align: center;
   }
 }
