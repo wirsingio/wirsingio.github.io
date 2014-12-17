@@ -146,8 +146,7 @@ section {
   img {
     display: inline-block;
     border: 1px solid #DDD;
-    width: 310px;
-    height: 140px;
+    width: 100%;
     margin-bottom: 1.5rem;
     padding: 5px;
   }
@@ -198,11 +197,6 @@ footer {
   .imprint-name {
     font-weight: 600;
     color: #ccc;
-  }
-
-  .imprint-responsible {
-    @include gridle(4);
-    @include gridle(12, "mobile");
   }
 
 }
