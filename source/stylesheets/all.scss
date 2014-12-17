@@ -44,8 +44,30 @@ p {
   margin: 0;
 }
 
-a:link, a:visited {
+a:link {
   color: $link-color;
+  
+  img {
+    border: 1px solid #DDD;
+    padding: 5px;
+  }
+}
+
+a:visited {
+  color: desaturate($link-color, 20%);
+  
+  img {
+    border-color: #DDD;
+  }
+}
+
+a:hover, a:active {
+  $active-link-color: darken($link-color, 8%);
+  color: $active-link-color;
+
+  img {
+    border-color: $active-link-color;
+  }
 }
 
 header {
@@ -145,10 +167,8 @@ section {
 .references-project {
   img {
     display: inline-block;
-    border: 1px solid #DDD;
     width: 100%;
     margin-bottom: 1.5rem;
-    padding: 5px;
   }
 
   p {
