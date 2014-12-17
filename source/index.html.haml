@@ -12,6 +12,26 @@ title: Wirsing – Software für eine bessere Zukunft
     %br
     Durch unsere Arbeit fördern wir sinnvolle Projekte für die Menschheit.
 
+
+%section.services
+  = partial :service, locals: { icon: 'web-apps-icon',
+    title: 'Web Applikationen',
+    description: 'Mit ihrer Web-Applikation erreichen Sie Milliarden Menschen auf der ganzen Welt. Ihre User verwenden automatisch immer die neueste Version Ihrer Software im Web-Browser. ' }
+
+  = partial :service, locals: { icon: 'mobile-apps-icon',
+    title: 'Mobile Apps',
+    description: 'Smartphones und Tablets sind mittlerweile allgegenwärtig. Mit mobilen Apps ist Ihre Software auch unterwegs verwendbar und kann in jeder Situationen zum Einsatz kommen.' }
+
+  = partial :service, locals: { icon: 'data-viz-icon',
+    title: 'Daten-Visualisierung',
+    description: 'Visualisierungen machen komplexe Daten und Fakten verständlich. Durch interaktive Benutzeroberflächen vermitteln Sie Information auf spannende und spielerische Weise.' }
+
+%section.vision
+  %h2
+    Wir sind ein innovatives Team aus weltklasse Software Entwicklern,
+    %br
+    User Experience Gurus und Screen Design Ninja Turtles. 
+
 %section.about
   = partial :team_member, locals: { id: 'clemens',
     name: 'Clemens Helm',
