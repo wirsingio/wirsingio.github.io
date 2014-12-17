@@ -17,7 +17,6 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: $text-color;
-  padding-bottom: 3rem;
   text-align: center;
 }
 
@@ -164,30 +163,6 @@ section {
   @include font-signika;
 }
 
-.imprint {
-  color: #BBB;
-  @include gridle_container();
-  @include center_box();
-  font-size: 14px;
-
-  .imprint-title {
-    margin: 0px;
-    @include gridle(12);
-    font-size: inherit;
-  }
-
-  .imprint-name {
-    font-weight: 600;
-    color: #999;
-  }
-
-  .imprint-responsible {
-    @include gridle(4);
-    @include gridle(12, "mobile");
-  }
-
-}
-
 .service-cell {
   h2, h3, h4 {
     margin-bottom: 1.5rem;
@@ -202,3 +177,33 @@ section {
     line-height: 18px;
   }
 }
+
+footer {
+  background-color: #333;
+  color: #aaa;
+
+  padding: 3rem 1rem;
+}
+
+.imprint {
+  @include gridle_container();
+  @include center_box();
+  font-size: 14px;
+
+  .imprint-title {
+    @include gridle(12);
+    font-size: inherit;
+  }
+
+  .imprint-name {
+    font-weight: 600;
+    color: #ccc;
+  }
+
+  .imprint-responsible {
+    @include gridle(4);
+    @include gridle(12, "mobile");
+  }
+
+}
+
