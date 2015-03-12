@@ -120,6 +120,31 @@ section {
 
 }
 
+.news {
+  background: #F9F9F9;
+  padding: 3rem;
+
+  > .announcement {
+    @include gridle_container();
+    @include center_box();
+
+    img {
+      @include gridle(4);
+      @include gridle(12, "mobile");
+      border: none;
+    }
+
+    .text {
+      @include gridle(8);
+      @include gridle(12, "mobile");
+      text-align: left;
+
+      h3 {
+        padding: 0;
+      }
+    }
+  }
+}
 
 .about-avatar {
   border: 1px solid #BBB;
