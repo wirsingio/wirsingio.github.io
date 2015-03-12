@@ -15,7 +15,7 @@
 body {
   @include font-opensans;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.5em;
   color: $text-color;
   text-align: center;
 }
