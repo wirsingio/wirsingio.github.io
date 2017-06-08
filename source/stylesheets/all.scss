@@ -123,12 +123,14 @@ section {
   .cell {
     @include gridle(8);
     @include gridle-push(2);
+    @include gridle(12, "mobile");
   }
 }
 
 .about {
   .cell {
     @include gridle(6);
+    @include gridle(12, "mobile");
   }
 }
 
