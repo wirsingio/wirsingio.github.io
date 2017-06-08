@@ -3,6 +3,7 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.3.6"
+gem "json", "~>1.8.2"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

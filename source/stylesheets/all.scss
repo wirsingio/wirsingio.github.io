@@ -46,7 +46,7 @@ p {
 
 a:link {
   color: $link-color;
-  
+
   img {
     border: 1px solid #DDD;
     padding: 5px;
@@ -55,7 +55,7 @@ a:link {
 
 a:visited {
   color: desaturate($link-color, 20%);
-  
+
   img {
     border-color: #DDD;
   }
@@ -117,8 +117,21 @@ section {
     display: inline-block;
     margin-bottom: 1.5rem;
   }
-
 }
+
+.references {
+  .cell {
+    @include gridle(8);
+    @include gridle-push(2);
+  }
+}
+
+.about {
+  .cell {
+    @include gridle(6);
+  }
+}
+
 
 .news {
   background: #F9F9F9;
@@ -244,5 +257,9 @@ footer {
     color: #ccc;
   }
 
+  .cell {
+    @include gridle(6);
+    @include gridle-push(3);
+  }
 }
 

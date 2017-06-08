@@ -42,21 +42,17 @@ title: Wirsing – Software für eine bessere Zukunft
   %h2
     Wir sind ein innovatives Team aus weltklasse Software Entwicklern,
     %br
-    User Experience Gurus und Screen Design Ninja Turtles. 
+    User Experience und Screen Design Experten. 
 
 %section.about
-  = partial :team_member, locals: { id: 'clemens',
-    name: 'Clemens Helm',
-    job: 'Backend Developer',
-    description: 'Clemens entwickelt Software erster Klasse. Viele seiner Apps sind bereits jahrelang erfolgreich im Einsatz. Hier bei Wirsing lebt er auch seine anderen Leidenschaften: Marketing, Planung und Unternehmertum.' }
   = partial :team_member, locals: { id: 'aaron',
     name: 'Aaron Cruz',
     job: 'Mobile &amp; Web Development',
-    description: 'Aaron baut native iOS- und Android-Apps und die APIs dafür. Nebenbei organisiert er ein paar Meetup-Gruppen in Wien. Wenn man anfängt, mit ihm über Essen zu reden, könnte es sein, dass er nie wieder aufhört.' }
-  = partial :team_member, locals: { id: 'dominik',
-    name: 'Dominik Guzei',
-    job: 'Design &amp; Frontend Development',
-    description: 'Für Dominik sind Design und Programmierung keine getrennten Konzepte, sondern zwei spannende Möglichkeiten, die Welt kreativ zu gestalten. Seine Spezialität sind dabei moderne interaktive Applikationen für das Web.' }
+    description: 'Aaron baut chatbots, native iOS- und Android-Apps und die APIs dafür. Nebenbei organisiert er ein paar Meetup-Gruppen in Wien. Wenn man anfängt, mit ihm über Essen zu reden, könnte es sein, dass er nie wieder aufhört.' }
+  = partial :team_member, locals: { id: 'helene',
+    name: 'Helene Pattermann',
+    job: 'Projekt Management & Marketing',
+    description: 'Für Helene sind Projekt Management und Marketing keine getrennten Konzepte, sondern zwei spannende Möglichkeiten, die Welt kreativ zu gestalten. Ihre Spezialität sind dabei SEO und Food Waste Prevention.' }
 
 %section.references
   %h2 Referenzen
@@ -66,35 +62,13 @@ title: Wirsing – Software für eine bessere Zukunft
     In der Vergangenheit haben die Gründer aber schon einige erfolgreiche Projekte verwirklicht:
 
   .references-project.cell
-    %a(href="https://www.codeship.com/")
-      %img(src="images/references/codeship.png")
-    %h3 Codeship
+    %a(href="http://reducefoodwaste.eu")
+      %img(src="images/references/reducefoodwaste.png")
+    %h3 STREFOWA
     %p
-      %a(href="https://www.codeship.com/") Codeship
-      zählt zu den erfolgreichsten österreichischen StartUps.
-      Clemens war für die Entwicklung der Web-Applikation verantwortlich
-      und leitete das Entwickler-Team.
-
-  .references-project.cell
-    %a(href="http://www.decorissimo.es")
-      %img(src="images/references/decorissimo.png")
-    %h3 Decorissimo
-    %p
-      Aaron unterstützte
-      %a(href="http://www.decorissimo.es/") Decorissimo
-      dabei, ein
-      %a(href="http://en.wikipedia.org/wiki/Minimum_viable_product") "Minimum viable product"
-      zu erstellen. Heute zählt Decorissimo zu den erfolgreichsten Plattformen, um stylische Einrichtung und Möbel zu finden.
-
-  .references-project.cell
-    %a(href="http://www.codeadventure.com/prisma")
-      %img(src="images/references/prisma.png")
-    %h3 Prisma
-    %p
-      Dominik entwickelte mit
-      %a(href="http://www.codeadventure.com/prisma") Prisma
-      ein Werkzeug, mit dem Grafik-Designer Farben zwischen verschiedenen Projekten
-      synchronisieren können.
+      Wir unterstützten
+      %a(href="http://reducefoodwaste.eu/") STREFOWA
+      /.
 
 
 %section.contact
@@ -105,22 +79,9 @@ title: Wirsing – Software für eine bessere Zukunft
     %h3.imprint-title Verantwortlich für den Inhalt:
 
     %p.imprint-responsible.cell
-      %span.imprint-name Clemens Helm
-      %br
-      Hietzinger Hauptstraße 99A/3
-      %br
-      1130 Wien
-
-    %p.imprint-responsible.cell
-      %span.imprint-name Aaron Cruz
+      %span.imprint-name
+        %a(href="http://squarebracket.io") Square Bracket eU
       %br
       Weidlingbachgasse 14
       %br
-      3411 Weidling
-
-    %p.imprint-responsible.cell
-      %span.imprint-name Dominik Guzei
-      %br
-      Goethestrasse 27
-      %br
-      2230 Gänserndorf
+      3400 Weidling
