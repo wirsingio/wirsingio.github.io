@@ -124,6 +124,7 @@ section {
     @include gridle(8);
     @include gridle-push(2);
     @include gridle(12, "mobile");
+    @include gridle-push(0, "mobile");
   }
 }
 
@@ -262,6 +263,8 @@ footer {
   .cell {
     @include gridle(6);
     @include gridle-push(3);
+    @include gridle(12, "mobile");
+    @include gridle-push(0, "mobile");
   }
 }
 
